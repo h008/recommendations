@@ -84,6 +84,7 @@ class SettingsController extends Controller {
 		$availableSettings = ['enabled'];
 		if (!in_array($key, $availableSettings)) {
 			return new JSONResponse([
+
 				'message' => 'parameter does not exist',
 			], Http::STATUS_UNPROCESSABLE_ENTITY);
 		}

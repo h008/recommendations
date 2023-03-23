@@ -30,5 +30,6 @@ return [
 		['name' => 'settings#setSetting', 'url' => '/settings/{key}', 'verb' => 'PUT'],
 		['name' => 'recommendation#index', 'url' => '/api/recommendations', 'verb' => 'GET'],
 		['name' => 'recommendation#always', 'url' => '/api/recommendations/always', 'verb' => 'GET'],
+		['name' => 'categories#index', 'url' => '/api/categories', 'verb' => 'GET'],
 	],
 ];

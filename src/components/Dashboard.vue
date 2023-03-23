@@ -20,8 +20,11 @@
   -->
 
 <template>
+	<div>
 	<DashboardWidget id="recommendations" :items="recommendedFiles">
 		<template v-slot:default="{ item }">
+<div>
+
 			<RecommendedFile :id="item.id"
 				:key="item.id"
 				:extension="item.extension"
@@ -30,6 +33,7 @@
 				:directory="item.directory"
 				:reason="item.reason"
 				:has-preview="item.hasPreview" />
+</div>
 		</template>
 		<template #empty-content>
 			<EmptyContent
@@ -41,6 +45,7 @@
 			</EmptyContent>
 		</template>
 	</DashboardWidget>
+	</div>
 </template>
 
 <script>

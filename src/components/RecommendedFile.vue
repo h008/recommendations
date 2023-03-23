@@ -30,12 +30,12 @@
 		<div class="details">
 			<div class="file-name">
 				<template v-if="extension">
-					<span class="name">{{ nameWithoutExtension }}</span><!--
+					<span class="name">{{ nameWithoutExtension }}desu</span><!--
 				 --><span v-if="extension"
-						  class="extension">.{{ extension }}</span>
+						  class="extension">.{{ extension }}da</span>
 				</template>
 				<template v-else>
-					<span class="name">{{ name }}</span>
+					<span class="name">{{ name }}dayo</span>
 				</template>
 
 			</div>
