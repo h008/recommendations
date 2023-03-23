@@ -83,6 +83,8 @@ class CategoriesController extends Controller {
 			$catId=0;
 			if($this->hostName==='dev.sincerely.c3g.work'){
 				$catId=121341;
+			}else if($this->hostName==='sincerely.c3g.jp'){
+				$catId=139982;
 			};
 			$catfolder= $this->folder->getById($catId)[0]->getDirectoryListing();
 			$response['categories'] =  array_map(function($cat){
